@@ -7,13 +7,15 @@ public class Arquero extends Personaje {
     public void atacar(Combatiente enemigo) {
         int danio = arma.getDanioBase() + nivel;
         enemigo.recibirDanio(danio);
-        System.out.println(nombre + " dispara una flecha con su " + arma + " causando " + danio + " de daño.");
+        System.out.println(nombre + " dispara una flecha con su " + arma + " causando " + danio + " de daño.\n");
     }
 
     @Override
     public void usarHabilidad(Combatiente enemigo) {
         int danio = (arma.getDanioBase() + nivel * 2);
         enemigo.recibirDanio(danio);
-        System.out.println(nombre + " usa su habilidad 'Tiro preciso', causando " + danio + " de daño.");
+        System.out.println(nombre + " usa su habilidad 'Tiro preciso', causando " + danio + " de daño.\n");
     }
+
+
 }

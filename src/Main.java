@@ -20,23 +20,14 @@ public class Main {
         int opcion = sc.nextInt();
 
         switch (opcion) {
-            case 1:{
-                Batalla.iniciarBatalla(guerrero, mago);
-            }break;
-            case 2:{
-                Batalla.iniciarBatalla(guerrero, Arquero);
-            }break;
-            case 3:{
-                Batalla.iniciarBatalla(Arquero, mago);
-            }break;
-            default: {
-                System.out.println("womp womp");
-            }
+            case 1:{Batalla.iniciarBatalla(guerrero, mago);}
+            break;
+            case 2:{Batalla.iniciarBatalla(guerrero, Arquero);}
+            break;
+            case 3:{Batalla.iniciarBatalla(Arquero, mago);}
+            break;
+            default: {System.out.println("womp womp");}
         }
-
-
-
-
 
         // Crear inventario
         ArrayList<ObjetoInventario> inventario = new ArrayList<>();

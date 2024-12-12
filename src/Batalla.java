@@ -20,8 +20,8 @@ public class Batalla {
             }
 
             // Turno del segundo personaje
-            System.out.println("\nTurno de " + p2.getNombre() + ". Elige acción: 1) Atacar 2) Usar Habilidad");
-            accion = sc.nextInt();
+            System.out.println("\nTurno de " + p2.getNombre());
+            accion = (int)(Math.random() *3);
             if (accion == 1) {
                 p2.atacar(p1);
             } else {
