@@ -2,12 +2,12 @@ import java.util.Scanner;
 
 public class Batalla {
     public static void iniciarBatalla(Personaje p1, Personaje p2) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("¡Comienza la batalla entre " + p1.getNombre() + " y " + p2.getNombre() + "!");
 
         while (p1.estaVivo() && p2.estaVivo()) {
             System.out.println("\nTurno de " + p1.getNombre() + ". Elige acción: 1) Atacar 2) Usar Habilidad");
-            int accion = scanner.nextInt();
+            int accion = sc.nextInt();
             if (accion == 1) {
                 p1.atacar(p2);
             } else {
@@ -21,7 +21,7 @@ public class Batalla {
 
             // Turno del segundo personaje
             System.out.println("\nTurno de " + p2.getNombre() + ". Elige acción: 1) Atacar 2) Usar Habilidad");
-            accion = scanner.nextInt();
+            accion = sc.nextInt();
             if (accion == 1) {
                 p2.atacar(p1);
             } else {
