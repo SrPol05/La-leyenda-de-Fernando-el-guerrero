@@ -15,18 +15,25 @@ public class Main {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Elige combate!!! \n 1-- Guerrero contra Mago  \n 2-- Guerrero contra Arquero \n 3-- Arquero contra Mago");
+        System.out.println("Elige un Fernando: \n");
 
         int opcion = sc.nextInt();
-
+        //{Batalla.iniciarBatalla(guerrero, mago);}
         switch (opcion) {
-            case 1:{Batalla.iniciarBatalla(guerrero, mago);}
+            case 1:{
+                int opcionA = sc.nextInt();
+                switch (opcionA)
+                {
+
+                }
+            }
             break;
-            case 2:{Batalla.iniciarBatalla(guerrero, Arquero);}
+            case 2:{}
             break;
-            case 3:{Batalla.iniciarBatalla(Arquero, mago);}
+            case 3:{}
             break;
-            default: {System.out.println("womp womp");}
+
+            default: {}
         }
 
         // Crear inventario
